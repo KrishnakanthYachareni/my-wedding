@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Krishna & Nandini · Wedding Invitation</title>
+  <meta name="description" content="The wedding of Krishna & Nandini. Muhurtham: Thursday, 3 December 2026 at 4:46 AM, Annavaram. Reception: Sunday, 6 December 2026, 5 PM onwards, Siddipet.">
+  <meta name="theme-color" content="#4a0912">
+
+  <!-- Link preview for WhatsApp / Instagram / Facebook.
+       After deploying, change og:image and og:url to FULL addresses,
+       e.g. https://username.github.io/my-wedding/assets/og-image.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Krishna & Nandini · Wedding Invitation">
+  <meta property="og:description" content="Muhurtham · Thu, 3 Dec 2026 · 4:46 AM · Annavaram  |  Reception · Sun, 6 Dec 2026 · 5 PM · Siddipet">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body class="has-door">
+
+  <!-- ============ Temple-door intro ============ -->
+  <div class="door-stage" id="doorStage">
+    <div class="toranam toranam--door" aria-hidden="true"></div>
+    <div class="door door--left" aria-hidden="true"><span class="door-knob"></span></div>
+    <div class="door door--right" aria-hidden="true"><span class="door-knob"></span></div>
+    <button class="door-seal" id="doorOpen" aria-label="Open the wedding invitation">
+      <img src="assets/kalash.svg" alt="" class="door-seal__kalash">
+      <span class="door-seal__te">Wedding Invitation</span>
+      <span class="door-seal__mono">K <i>❀</i> N</span>
+      <span class="door-seal__tap">Tap to open</span>
+    </button>
+  </div>
+
+  <canvas id="petals" aria-hidden="true"></canvas>
+
+  <button class="music-toggle" id="musicToggle" hidden aria-label="Play music">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M9 18.5a3 3 0 1 1-2-2.83V5l12-2v12.5a3 3 0 1 1-2-2.83V7.4l-8 1.33z"/></svg>
+  </button>
+
+  <!-- ============ Hero ============ -->
+  <header class="hero" id="home">
+    <div class="toranam" aria-hidden="true"></div>
+    <img class="hero__mandala" src="assets/mandala.svg" alt="" aria-hidden="true">
+
+    <div class="hero__inner">
+      <img class="hero__kalash" src="assets/kalash.svg" alt="Kalasham with mango leaves and coconut">
+      <h1 class="hero__title">Wedding Invitation</h1>
+      <p class="hero__lead">With the blessings of our elders<br>we invite you to celebrate the wedding of</p>
+
+      <div class="names">
+        <span class="names__one">Krishna</span>
+        <span class="names__amp">&amp;</span>
+        <span class="names__two">Nandini</span>
+      </div>
+
+      <div class="date-badge">
+        <span class="date-badge__side">Thursday</span>
+        <span class="date-badge__mid">
+          <small>December</small>
+          <b>03</b>
+          <small>2026</small>
+        </span>
+        <span class="date-badge__side">Annavaram</span>
+      </div>
+      <p class="hero__muhurtham">Muhurtham · <b>4:46 AM</b></p>
+
+      <div class="countdown" id="countdown" aria-live="polite">
+        <p class="countdown__label" id="countdownLabel">Counting down to the Muhurtham</p>
+        <div class="countdown__grid" id="countdownGrid">
+          <div><b data-cd="d">00</b><span>Days</span></div>
+          <div><b data-cd="h">00</b><span>Hours</span></div>
+          <div><b data-cd="m">00</b><span>Mins</span></div>
+          <div><b data-cd="s">00</b><span>Secs</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#invite" aria-label="Scroll to invitation">
+        <span></span>
+      </a>
+    </div>
+  </header>
+
+  <div class="zari" aria-hidden="true"></div>
+
+  <main>
+    <!-- ============ Invitation ============ -->
+    <section class="section section--paper" id="invite">
+      <div class="wrap narrow reveal">
+        <p class="kicker">Together with our families</p>
+        <h2 class="heading">You're Invited</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="prose">
+          Two hearts, two families and one beautiful beginning.
+          We joyfully invite you and your family to grace the auspicious
+          wedding of <b>Krishna</b> &amp; <b>Nandini</b> and shower the couple
+          with your blessings as they begin their new journey together.
+        </p>
+        <p class="prose prose--accent">Your presence is the greatest blessing we could ask for.</p>
+      </div>
+    </section>
+
+    <!-- ============ Events ============ -->
+    <section class="section section--paper section--events" id="events">
+      <div class="wrap">
+        <div class="reveal center">
+          <p class="kicker">Save the dates</p>
+          <h2 class="heading">Wedding Celebrations</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="events">
+          <!-- Wedding -->
+          <article class="event reveal" id="event-wedding">
+            <div class="event__arch">
+              <svg class="event__icon" viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 4l3 5h-6zM24 13h16l2 7H22zM20 22h24l3 9H17zM15 33h34l3 10H12zM10 45h44v15H10z" fill="currentColor"/>
+                <path d="M27 60V51a5 5 0 0 1 10 0v9z" fill="#fff7e8"/>
+                <circle cx="32" cy="4" r="2" fill="#f2b31b"/>
+              </svg>
+              <p class="event__te">The Sacred Union</p>
+              <h3 class="event__title">The Wedding</h3>
+            </div>
+            <div class="event__body">
+              <p class="event__date"><span>Thursday</span>3 December 2026</p>
+              <div class="event__time">
+                <span class="event__time-label">Muhurtham</span>
+                <span class="event__time-value">4:46 <small>AM</small></span>
+                <span class="event__time-note">early morning</span>
+              </div>
+              <p class="event__place">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></svg>
+                <span class="event__addr">
+                  <b>Hari Hara Sada</b>
+                  <span>Annavaram, Andhra Pradesh 533406</span>
+                  <small>Landmark: open place on the left side</small>
+                </span>
+              </p>
+
+              <ol class="mini-timeline">
+                <li><b>Wed, 2 Dec · Night</b><span>Wedding celebrations &amp; rituals begin</span></li>
+                <li><b>Thu, 3 Dec · 4:46 AM</b><span>Muhurtham · Jeelakarra-Bellam</span></li>
+              </ol>
+
+              <p class="event__tip">
+                As the muhurtham is before dawn, we warmly request you to
+                arrive by the evening of <b>December 2nd</b>.
+              </p>
+
+              <div class="event__actions">
+                <a class="btn btn--primary" href="https://maps.app.goo.gl/HD8vjAsw6nngHmZ98" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.7 11.3l-9-9a1 1 0 0 0-1.4 0l-9 9a1 1 0 0 0 0 1.4l9 9a1 1 0 0 0 1.4 0l9-9a1 1 0 0 0 0-1.4M14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5z"/></svg>
+                  Directions
+                </a>
+                <button class="btn btn--ghost" data-calendar="wedding">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 16H5V10h14zM12 12h5v5h-5z"/></svg>
+                  Add to Calendar
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Reception -->
+          <article class="event reveal" id="event-reception">
+            <div class="event__arch">
+              <svg class="event__icon" viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M32 6c4 6 7 10 7 15a7 7 0 0 1-14 0c0-5 3-9 7-15z" fill="#f2b31b"/>
+                <path d="M32 14c2 3 3 5 3 7a3 3 0 0 1-6 0c0-2 1-4 3-7z" fill="#fff7e8"/>
+                <path d="M8 34h48c-2 12-12 20-24 20S10 46 8 34z" fill="currentColor"/>
+                <path d="M4 32h56v4H4zM22 56h20v4H22z" fill="currentColor"/>
+              </svg>
+              <p class="event__te">An Evening Together</p>
+              <h3 class="event__title">The Reception</h3>
+            </div>
+            <div class="event__body">
+              <p class="event__date"><span>Sunday</span>6 December 2026</p>
+              <div class="event__time">
+                <span class="event__time-label">Evening</span>
+                <span class="event__time-value">5:00 <small>PM</small></span>
+                <span class="event__time-note">onwards</span>
+              </div>
+              <p class="event__place">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></svg>
+                <span class="event__addr">
+                  <b>Pawar Convention Hall</b>
+                  <span>Viswanathapalle, Velikatta, Siddipet, Telangana 502277</span>
+                </span>
+              </p>
+              <p class="event__tip">
+                Join us for an evening of dinner, music and memories
+                as we celebrate the newlyweds.
+              </p>
+
+              <div class="event__actions">
+                <a class="btn btn--primary" href="https://maps.app.goo.gl/p5RBkiedZHTkyS5b8" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.7 11.3l-9-9a1 1 0 0 0-1.4 0l-9 9a1 1 0 0 0 0 1.4l9 9a1 1 0 0 0 1.4 0l9-9a1 1 0 0 0 0-1.4M14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5z"/></svg>
+                  Directions
+                </a>
+                <button class="btn btn--ghost" data-calendar="reception">
+                  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 16H5V10h14zM12 12h5v5h-5z"/></svg>
+                  Add to Calendar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="zari" aria-hidden="true"></div>
+
+    <!-- ============ Rituals ============ -->
+    <section class="section section--maroon" id="rituals">
+      <div class="wrap">
+        <div class="reveal center">
+          <p class="kicker kicker--gold">Traditions</p>
+          <h2 class="heading heading--gold">Moments of a Telugu Wedding</h2>
+          <p class="sub">Swipe through the rituals you'll witness</p>
+        </div>
+      </div>
+      <div class="rituals" id="ritualsTrack">
+        <article class="ritual"><span class="ritual__n">1</span><h3>Mangala Snanam</h3><p>The bride and groom are bathed in turmeric and oil and blessed by elders as the bride and groom to be.</p></article>
+        <article class="ritual"><span class="ritual__n">2</span><h3>Kasi Yatra</h3><p>The groom playfully sets off for Kasi to take up an ascetic life, until the bride's brother persuades him to marry instead.</p></article>
+        <article class="ritual"><span class="ritual__n">3</span><h3>Kanyadanam</h3><p>The bride's parents place her hand in the groom's, entrusting him with their most precious gift.</p></article>
+        <article class="ritual ritual--star"><span class="ritual__n">4</span><span class="ritual__tag">at 4:46 AM</span><h3>Jeelakarra Bellam</h3><p>At the exact muhurtham, a paste of cumin and jaggery is placed on each other's heads, an inseparable bond through life's bitter and sweet.</p></article>
+        <article class="ritual"><span class="ritual__n">5</span><h3>Mangalya Dharana</h3><p>The groom ties the sacred mangalsutram around the bride's neck with three knots.</p></article>
+        <article class="ritual"><span class="ritual__n">6</span><h3>Talambralu</h3><p>The couple shower each other with turmeric rice and pearls, the most joyful and playful moment of the day.</p></article>
+        <article class="ritual"><span class="ritual__n">7</span><h3>Saptapadi</h3><p>Seven steps together around the sacred fire, with seven vows for a lifetime.</p></article>
+        <article class="ritual"><span class="ritual__n">8</span><h3>Arundhati Darshanam</h3><p>The couple are shown the Arundhati star, a symbol of devotion and an unbreakable union.</p></article>
+      </div>
+    </section>
+
+    <div class="zari" aria-hidden="true"></div>
+
+    <!-- ============ Video ============ -->
+    <section class="section section--paper" id="film">
+      <div class="wrap narrow">
+        <div class="reveal center">
+          <p class="kicker">Our story</p>
+          <h2 class="heading">Pre-Wedding Film</h2>
+          <div class="divider" aria-hidden="true"></div>
+        </div>
+        <div class="video reveal" id="video">
+          <button class="video__poster" id="videoPlay" aria-label="Play pre-wedding film">
+            <img id="videoThumb" alt="">
+            <span class="video__play"><svg viewBox="0 0 24 24" width="34" height="34"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg></span>
+          </button>
+        </div>
+        <p class="video__cta reveal"><a id="videoYoutube" href="#" target="_blank" rel="noopener">Watch on YouTube ↗</a></p>
+      </div>
+    </section>
+
+    <!-- ============ Live ============ -->
+    <section class="section section--live" id="live">
+      <div class="wrap narrow">
+        <div class="live-card reveal">
+          <span class="live-pill" id="livePill">Upcoming</span>
+          <p class="kicker kicker--gold">Live stream</p>
+          <h2 class="heading heading--gold">Watch Us Live</h2>
+          <p class="live-card__text">Can't make it in person? Join us from wherever you are and send your blessings online.</p>
+          <ul class="live-schedule">
+            <li><b>Wedding</b><span>Wed 2 Dec night → Thu 3 Dec, 4:46 AM</span></li>
+            <li><b>Reception</b><span>Sun 6 Dec · from 5:00 PM</span></li>
+          </ul>
+          <a class="btn btn--gold" id="liveBtn" href="#" target="_blank" rel="noopener" aria-disabled="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"/></svg>
+            <span id="liveBtnText">Link will be shared here</span>
+          </a>
+          <p class="live-card__note" id="liveNote">All times are Indian Standard Time (IST).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Share ============ -->
+    <section class="section section--paper" id="share">
+      <div class="wrap narrow center">
+        <div class="reveal">
+          <p class="kicker">Spread the word</p>
+          <h2 class="heading">Share the Joy</h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="prose">Send this invitation to family and friends, or put it on your WhatsApp Status and Instagram Story.</p>
+        </div>
+        <div class="share-grid reveal">
+          <button class="share-btn share-btn--wa" id="shareWhatsapp">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2m0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2m4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3"/></svg>
+            WhatsApp
+          </button>
+          <a class="share-btn share-btn--story" href="story.html">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3m0 2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm5 4.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7"/></svg>
+            Status / Story cards
+          </a>
+          <button class="share-btn" id="shareNative">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.4 1.2l-6.8-3.4a3 3 0 0 0 0-1.6l6.8-3.4A3 3 0 1 0 15 7c0 .3 0 .5.1.8L8.3 11.2a3 3 0 1 0 0 3.6l6.8 3.4-.1.8a3 3 0 1 0 3-3"/></svg>
+            More…
+          </button>
+          <button class="share-btn" id="shareCopy">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16 1H6a2 2 0 0 0-2 2v13h2V3h10zm3 4H10a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m0 16h-9V7h9z"/></svg>
+            <span id="copyText">Copy link</span>
+          </button>
+        </div>
+        <p class="hashtag reveal">#KrishnaWedsNandini</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="zari" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <img src="assets/kalash.svg" alt="" class="footer__kalash" aria-hidden="true">
+    <p class="footer__te">Awaiting your presence…</p>
+    <p class="footer__names">Krishna &amp; Nandini</p>
+    <p class="footer__sub">with love &amp; gratitude from both our families</p>
+    <p class="footer__te footer__thanks">Thank you</p>
+  </footer>
+
+  <!-- ============ Bottom nav (mobile) ============ -->
+  <nav class="bottom-nav" id="bottomNav" aria-label="Sections">
+    <a href="#home" data-nav="home"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg><span>Home</span></a>
+    <a href="#events" data-nav="events"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 16H5V10h14z"/></svg><span>Events</span></a>
+    <a href="#film" data-nav="film"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M10 8.6v6.8l5.5-3.4zM21 4H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-1 14H4V6h16z"/></svg><span>Film</span></a>
+    <a href="#live" data-nav="live"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M7.8 7.8l-1.4-1.4a8 8 0 0 0 0 11.2l1.4-1.4a6 6 0 0 1 0-8.4m9.8-1.4l-1.4 1.4a6 6 0 0 1 0 8.4l1.4 1.4a8 8 0 0 0 0-11.2"/></svg><span>Live</span></a>
+    <a href="#share" data-nav="share"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.4 1.2l-6.8-3.4a3 3 0 0 0 0-1.6l6.8-3.4A3 3 0 1 0 15 7c0 .3 0 .5.1.8L8.3 11.2a3 3 0 1 0 0 3.6l6.8 3.4-.1.8a3 3 0 1 0 3-3"/></svg><span>Share</span></a>
+  </nav>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/config.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

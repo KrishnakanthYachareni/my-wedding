@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Krishna & Nandini//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:krishna-nandini-wedding-20261203@wedding
+DTSTAMP:20261004T000000Z
+DTSTART:20261202T231600Z
+DTEND:20261203T013000Z
+SUMMARY:Krishna & Nandini — Wedding (Muhurtham 4:46 AM)
+DESCRIPTION:Sumuhurtham at 4:46 AM IST. Wedding celebrations & rituals begin on the night of December 2nd. Map: https://maps.app.goo.gl/16ggGqFMHx2kWyCL9
+LOCATION:Hari Hara Sada\, Annavaram\, Andhra Pradesh 533406
+URL:https://maps.app.goo.gl/16ggGqFMHx2kWyCL9
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Krishna & Nandini's wedding is tomorrow (Muhurtham 4:46 AM)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

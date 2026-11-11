@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Krishna & Nandini · Status & Story Cards</title>
+  <meta name="theme-color" content="#3d0710">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/story.css">
+</head>
+<body class="story-page">
+
+  <div class="stories" id="stories">
+
+    <!-- 1 · Save the date -->
+    <section class="story" id="savedate" data-label="Save the Date">
+      <div class="card">
+        <div class="card__toranam" aria-hidden="true"></div>
+        <div class="card__frame">
+          <img class="c-kalash" src="assets/kalash.svg" alt="">
+          <p class="c-title">Save the Date</p>
+          <p class="c-caps">The wedding of</p>
+          <p class="c-name">Krishna</p>
+          <p class="c-amp">&amp;</p>
+          <p class="c-name">Nandini</p>
+          <div class="c-date">
+            <span class="c-date__side">Thursday</span>
+            <span class="c-date__mid"><small>December</small><b>03</b><small>2026</small></span>
+            <span class="c-date__side">Annavaram</span>
+          </div>
+          <p class="c-line">Muhurtham · <b>4:46 AM</b></p>
+          <p class="c-foot" data-site>#KrishnaWedsNandini</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · Wedding -->
+    <section class="story" id="wedding" data-label="Wedding">
+      <div class="card">
+        <div class="card__toranam" aria-hidden="true"></div>
+        <div class="card__frame">
+                    <img class="c-kalash c-kalash--sm" src="assets/kalash.svg" alt="">
+          <p class="c-caps">The Wedding of</p>
+          <p class="c-names-inline"><span>Krishna</span><i>&amp;</i><span>Nandini</span></p>
+          <div class="c-time">
+            <span class="c-time__label">Muhurtham</span>
+            <span class="c-time__value">4:46<small>AM</small></span>
+            <span class="c-time__note">early morning</span>
+          </div>
+          <p class="c-day">Thursday · 3 December 2026</p>
+          <p class="c-place"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></svg>Annavaram</p>
+          <p class="c-note">Celebrations &amp; rituals begin on<br>the night of <b>2nd December</b></p>
+          <p class="c-foot" data-site>#KrishnaWedsNandini</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · Reception -->
+    <section class="story" id="reception" data-label="Reception">
+      <div class="card">
+        <div class="card__toranam" aria-hidden="true"></div>
+        <div class="card__frame">
+                    <img class="c-kalash c-kalash--sm" src="assets/kalash.svg" alt="">
+          <p class="c-caps">Wedding Reception</p>
+          <p class="c-names-inline"><span>Krishna</span><i>&amp;</i><span>Nandini</span></p>
+          <div class="c-time">
+            <span class="c-time__label">Evening</span>
+            <span class="c-time__value">5:00<small>PM</small></span>
+            <span class="c-time__note">onwards</span>
+          </div>
+          <p class="c-day">Sunday · 6 December 2026</p>
+          <p class="c-place"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></svg>Siddipet</p>
+          <p class="c-note">Join us for an evening of<br>dinner, music &amp; blessings</p>
+          <p class="c-foot" data-site>#KrishnaWedsNandini</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link-preview image (only used for rendering og-image.jpg) -->
+    <section class="story story--og" id="og" data-label="Preview" hidden>
+      <div class="card card--og">
+        <div class="card__toranam" aria-hidden="true"></div>
+        <div class="og">
+          <img class="og__kalash" src="assets/kalash.svg" alt="">
+          <div class="og__text">
+            <p class="og__title">Wedding Invitation</p>
+            <p class="og__names">Krishna <i>&amp;</i> Nandini</p>
+            <p class="og__line">Wedding · Thu, 3 Dec · <b>4:46 AM</b> · Annavaram</p>
+            <p class="og__line">Reception · Sun, 6 Dec · <b>5 PM</b> · Siddipet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Controls (tap a card to hide them for a clean screenshot) -->
+  <header class="story-top" id="storyTop">
+    <a class="story-top__back" href="./" aria-label="Back to invitation">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M15.4 7.4L14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg>
+      Invitation
+    </a>
+    <p class="story-top__hint">Tap card to hide buttons · then screenshot</p>
+  </header>
+
+  <footer class="story-dock" id="storyDock">
+    <div class="story-dots" id="storyDots"></div>
+    <div class="story-actions">
+      <button class="story-btn story-btn--share" id="shareImage">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18 16a3 3 0 0 0-2.4 1.2l-6.8-3.4a3 3 0 0 0 0-1.6l6.8-3.4A3 3 0 1 0 15 7c0 .3 0 .5.1.8L8.3 11.2a3 3 0 1 0 0 3.6l6.8 3.4-.1.8a3 3 0 1 0 3-3"/></svg>
+        Share to Status / Story
+      </button>
+      <a class="story-btn" id="downloadImage" href="assets/stories/savedate.png" download>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M5 20h14v-2H5zM19 9h-4V3H9v6H5l7 7z"/></svg>
+        Save
+      </a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/story.js"></script>
+</body>
+</html>
