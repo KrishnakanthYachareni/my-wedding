@@ -16,7 +16,7 @@ window.WEDDING = {
 
   // Your public site address once on GitHub Pages, e.g. "https://username.github.io/my-wedding/".
   // Used in share messages and printed small on the story cards. Leave "" to use the current page URL.
-  siteUrl: "http://krishnakanthyachareni.github.io/my-wedding/",
+  siteUrl: "https://krishnakanthyachareni.github.io/my-wedding/",
 
   // All times are IST (+05:30).
   muhurtham: "2026-12-03T04:46:00+05:30",
